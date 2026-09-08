@@ -1,24 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}Mike Kabwadi Shisha — Entrepreneur, commerce international & logistique{% endblock %}</title>
+        {% block meta %}
+            <meta name="description" content="Mike Kabwadi Shisha, entrepreneur congolais basé à Dubaï, spécialisé dans le commerce international, la logistique maritime et la gestion d'entreprises entre les Émirats arabes unis et la RDC.">
+            <meta property="og:title" content="Mike Kabwadi Shisha — Entrepreneur & dirigeant">
+            <meta property="og:description" content="Construire des ponts économiques solides entre le Moyen-Orient et l'Afrique — import-export, logistique et gestion opérationnelle.">
+            <meta property="og:url" content="/">
+            <link rel="canonical" href="/">
+        {% endblock %}
+
+        <script>
+            if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        </script>
+
         {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('styles/app.css') }}">
+            <link rel="stylesheet" href="{{ asset('styles/styles.css') }}">
+            <link rel="stylesheet" href="{{ asset('styles/reveal.css') }}">
         {% endblock %}
 
         {% block javascripts %}
             {% block importmap %}{{ importmap('app') }}{% endblock %}
         {% endblock %}
-
-        {% set frankenphp_hot_reload = app.request.server.get('FRANKENPHP_HOT_RELOAD') %}
-        {% if frankenphp_hot_reload %}
-        <meta name="frankenphp-hot-reload:url" content="{{ frankenphp_hot_reload }}">
-        <script src="https://cdn.jsdelivr.net/npm/idiomorph"></script>
-        <script src="https://cdn.jsdelivr.net/npm/frankenphp-hot-reload/+esm" type="module"></script>
-        {% endif %}
     </head>
-    <body>
+    <body class="min-h-screen bg-background text-foreground">
         {% block body %}{% endblock %}
     </body>
 </html>
