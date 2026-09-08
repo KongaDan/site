@@ -19,13 +19,13 @@
     <link rel="stylesheet" href="{{ asset('styles/reveal.css') }}">
 
     <!-- Script minimal pour initialiser le dark mode sans FOUC (flash of unstyled content) -->
-    <script>
-        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark');
-        } else {
-            document.documentElement.classList.remove('dark');
-        }
-    </script>
+<script>
+    if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.classList.add('dark');
+    } else {
+        document.documentElement.classList.remove('dark');
+    }
+</script>
 </head>
 
 <body class="min-h-screen bg-background text-foreground">
