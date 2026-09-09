@@ -4,28 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mike Kabwadi Shisha — Entrepreneur, commerce international & logistique</title>
+
+    <title>Mike Kabwadi Shisha — Entrepreneur, International Trade & Business Management</title>
+
     <meta name="description"
-        content="Mike Kabwadi Shisha, entrepreneur congolais basé à Dubaï, spécialisé dans le commerce international, la logistique maritime et la gestion d'entreprises entre les Émirats arabes unis et la RDC.">
-    <meta property="og:title" content="Mike Kabwadi Shisha — Entrepreneur & dirigeant">
+        content="Mike Kabwadi Shisha is a Congolese entrepreneur based in Dubai, specializing in international trade, business management, and strategic business development between the United Arab Emirates and Africa.">
+
+    <meta name="keywords"
+        content="Mike Kabwadi Shisha, entrepreneur, international trade, business management, Dubai, UAE, Africa, DRC, Congo, import export, business development">
+
+    <meta name="author" content="Mike Kabwadi Shisha">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title"
+        content="Mike Kabwadi Shisha — Entrepreneur & Business Leader">
+
     <meta property="og:description"
-        content="Construire des ponts économiques solides entre le Moyen-Orient et l'Afrique — import-export, logistique et gestion opérationnelle.">
+        content="Building strong business connections between the Middle East and Africa through international trade, entrepreneurship, and strategic business development.">
+
+    <meta property="og:type" content="website">
     <meta property="og:url" content="/">
+
     <link rel="canonical" href="/">
+
     {% block stylesheets %}
     <link rel="stylesheet" href="{{ asset('styles/app.css') }}">
     {% endblock %}
+
     <link rel="stylesheet" href="{{ asset('styles/styles.css') }}">
     <link rel="stylesheet" href="{{ asset('styles/reveal.css') }}">
 
-    <!-- Script minimal pour initialiser le dark mode sans FOUC (flash of unstyled content) -->
-<script>
-    if (localStorage.getItem('theme') === 'dark') {
-        document.documentElement.classList.add('dark');
-    } else {
-        document.documentElement.classList.remove('dark');
-    }
-</script>
+    <!-- Initialize dark mode without FOUC (Flash of Unstyled Content) -->
+    <script>
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
 </head>
 
 <body class="min-h-screen bg-background text-foreground">
@@ -39,22 +55,32 @@
             </a>
 
             <div class="hidden md:flex items-center gap-8 text-sm font-medium">
-                <a href="#about" class="text-muted-foreground hover:text-primary transition-colors">À propos</a>
-                <a href="#expertise" class="text-muted-foreground hover:text-primary transition-colors">Expertise</a>
-                <a href="#vision" class="text-muted-foreground hover:text-primary transition-colors">Vision</a>
-                <a href="#contact" class="text-muted-foreground hover:text-primary transition-colors">Contact</a>
+                <a href="#about" class="text-muted-foreground hover:text-primary transition-colors">
+                    About
+                </a>
+                <a href="#expertise" class="text-muted-foreground hover:text-primary transition-colors">
+                    Expertise
+                </a>
+                <a href="#vision" class="text-muted-foreground hover:text-primary transition-colors">
+                    Vision
+                </a>
+                <a href="#contact" class="text-muted-foreground hover:text-primary transition-colors">
+                    Contact
+                </a>
             </div>
 
             <div class="flex items-center gap-3">
-                <button id="theme-toggle" type="button" aria-label="Basculer le thème"
+                <button id="theme-toggle" type="button" aria-label="Toggle theme"
                     class="grid h-9 w-9 place-items-center rounded-full border border-border hover:bg-secondary transition-colors">
-                    <!-- Moon Icon (Visible en Mode Clair) -->
+
+                    <!-- Moon Icon (Visible in Light Mode) -->
                     <svg id="icon-moon" class="h-4 w-4 block dark:hidden" xmlns="http://www.w3.org/2000/svg" width="24"
                         height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                         stroke-linecap="round" stroke-linejoin="round">
                         <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
                     </svg>
-                    <!-- Sun Icon (Visible en Mode Sombre) -->
+
+                    <!-- Sun Icon (Visible in Dark Mode) -->
                     <svg id="icon-sun" class="h-4 w-4 hidden dark:block" xmlns="http://www.w3.org/2000/svg" width="24"
                         height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                         stroke-linecap="round" stroke-linejoin="round">
@@ -72,7 +98,7 @@
 
                 <a href="#contact"
                     class="hidden sm:inline-flex items-center gap-1.5 rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-sm shadow-primary/20 hover:bg-primary/90 transition-all">
-                    Me contacter
+                    Contact Me
                     <svg class="h-3.5 w-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
@@ -89,24 +115,28 @@
         <div class="container-editorial">
             <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                 <div class="reveal space-y-5">
-                    <span class="eyebrow">Entrepreneur · Dubaï — RDC (République démocratique du Congo)</span>
+                    <span class="eyebrow">Entrepreneur · Dubai — DRC (Democratic Republic of the Congo)</span>
+
                     <h1
                         class="text-[clamp(2.75rem,7vw,5rem)] font-black leading-[0.95] tracking-[-0.03em] text-foreground">
                         Mike Kabwadi<br />
                         <span class="text-primary">Shisha</span>
                     </h1>
+
                     <p class="text-lg md:text-xl font-semibold text-foreground/90 max-w-xl leading-snug tracking-tight">
-                        Entrepreneur congolais basé à Dubaï — commerce international, logistique et gestion
-                        d'entreprises entre les Émirats arabes unis et la RDC (République démocratique du Congo).
+                        Congolese entrepreneur based in Dubai — specializing in international trade,
+                        business management, and strategic business development between the United Arab Emirates and the DRC.
                     </p>
+
                     <p class="max-w-lg text-sm md:text-base text-muted-foreground leading-relaxed">
-                        Construire des ponts économiques solides entre le Moyen-Orient et l'Afrique, à travers des
-                        opérations structurées, fiables et durables.
+                        Building strong and lasting business connections between the Middle East and Africa
+                        through structured, reliable, and sustainable operations.
                     </p>
+
                     <div class="flex flex-wrap gap-3 pt-2">
                         <a href="#about"
                             class="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-md shadow-primary/25 hover:bg-primary/90 hover:shadow-lg hover:-translate-y-0.5 transition-all">
-                            Découvrir mon parcours
+                            Discover My Journey
                             <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round">
@@ -114,13 +144,15 @@
                                 <path d="m12 5 7 7-7 7" />
                             </svg>
                         </a>
+
                         <a href="#expertise"
                             class="inline-flex items-center gap-2 rounded-full border border-border bg-background px-5 py-2.5 text-sm font-semibold text-foreground hover:border-primary hover:text-primary transition-colors">
-                            Voir mes secteurs
+                            Explore My Expertise
                         </a>
+
                         <a href="#contact"
                             class="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold text-foreground hover:text-primary transition-colors">
-                            Me contacter
+                            Contact Me
                             <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round">
@@ -133,14 +165,16 @@
 
                 <div class="reveal relative" style="animation-delay: 120ms;">
                     <div class="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-xl shadow-black/10">
-                        <img src="{{ asset('img/img2.jpeg') }}" alt="Mike Kabwadi Shisha — Entrepreneur basé à Dubaï"
+                        <img src="{{ asset('img/img2.jpeg') }}"
+                            alt="Mike Kabwadi Shisha — Congolese entrepreneur based in Dubai"
                             width="1408" height="1600" class="h-full w-full object-cover" loading="eager"
                             decoding="async" />
                     </div>
+
                     <div
                         class="absolute -bottom-3 -left-3 md:-bottom-4 md:-left-4 bg-background border border-border px-4 py-3 rounded-xl shadow-lg text-xs">
-                        <div class="eyebrow">Basé à</div>
-                        <div class="mt-1 font-bold text-foreground">Dubaï · EAU (Émirats arabes unis)</div>
+                        <div class="eyebrow">Based in</div>
+                        <div class="mt-1 font-bold text-foreground">Dubai · UAE (United Arab Emirates)</div>
                     </div>
                 </div>
             </div>
@@ -148,97 +182,117 @@
 
         <div
             class="container-editorial mt-20 md:mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-border pt-10">
+
             <div>
-                <div class="text-2xl font-bold tracking-tight text-foreground">Dubaï</div>
-                <div class="mt-1 text-xs font-medium text-muted-foreground">Siège opérationnel</div>
+                <div class="text-2xl font-bold tracking-tight text-foreground">Dubai</div>
+                <div class="mt-1 text-xs font-medium text-muted-foreground">Operational Headquarters</div>
             </div>
+
             <div>
                 <div class="text-2xl font-bold tracking-tight text-foreground">Kinshasa</div>
-                <div class="mt-1 text-xs font-medium text-muted-foreground">Présence RDC (République démocratique du
-                    Congo)</div>
+                <div class="mt-1 text-xs font-medium text-muted-foreground">DRC Presence</div>
             </div>
+
             <div>
                 <div class="text-2xl font-bold tracking-tight text-foreground">Lubumbashi</div>
-                <div class="mt-1 text-xs font-medium text-muted-foreground">Présence RDC (République démocratique du
-                    Congo)</div>
+                <div class="mt-1 text-xs font-medium text-muted-foreground">DRC Presence</div>
             </div>
+
             <div>
                 <div class="text-2xl font-bold tracking-tight text-foreground">Matadi</div>
-                <div class="mt-1 text-xs font-medium text-muted-foreground">Port maritime</div>
+                <div class="mt-1 text-xs font-medium text-muted-foreground">Maritime Port</div>
             </div>
+
         </div>
     </section>
 
     <!-- ABOUT SECTION -->
     <section id="about" class="py-24 md:py-36 border-t border-border">
         <div class="container-editorial grid gap-12 md:gap-16 md:grid-cols-12 items-start">
+
             <div class="reveal md:col-span-5">
                 <div class="relative">
                     <img src="{{ asset('img/img1.jpeg') }}"
-                        alt="Portrait de Mike Kabwadi Shisha, entrepreneur basé à Dubaï" width="1408" height="1600"
+                        alt="Portrait of Mike Kabwadi Shisha, entrepreneur based in Dubai"
+                        width="1408" height="1600"
                         class="w-full aspect-[4/5] object-cover rounded-2xl shadow-xl shadow-black/5" />
+
                     <div
                         class="absolute -bottom-5 -left-5 bg-background border border-border px-4 py-3 rounded-xl shadow-lg text-xs">
-                        <div class="eyebrow">Basé à</div>
-                        <div class="mt-1 font-bold text-foreground">Dubaï · EAU (Émirats arabes unis)</div>
+                        <div class="eyebrow">Based in</div>
+                        <div class="mt-1 font-bold text-foreground">Dubai · UAE (United Arab Emirates)</div>
                     </div>
                 </div>
             </div>
 
             <div class="reveal md:col-span-7 space-y-6" style="animation-delay: 120ms;">
-                <span class="eyebrow">À propos</span>
+
+                <span class="eyebrow">About</span>
+
                 <h2 class="text-4xl md:text-5xl font-bold leading-[1.05] tracking-tight text-foreground">
-                    Structurer, sécuriser, <span class="text-primary">transmettre</span>.
+                    Structure, secure, <span class="text-primary">deliver</span>.
                 </h2>
+
                 <div class="space-y-5 text-lg text-muted-foreground leading-relaxed">
                     <p>
-                        Je suis fondateur et dirigeant de plusieurs structures actives dans l'import-export, la
-                        logistique maritime et la gestion opérationnelle, avec une présence entre Dubaï, Kinshasa,
-                        Lubumbashi et Matadi.
+                        I am the founder and managing director of several businesses operating across
+                        international trade, maritime logistics, and business operations, with a presence
+                        spanning Dubai, Kinshasa, Lubumbashi, and Matadi.
                     </p>
+
                     <p>
-                        Mon travail est axé sur la structuration des opérations, la sécurisation des flux commerciaux et
-                        la mise en place de services fiables adaptés au contexte africain.
+                        My work focuses on structuring operations, securing commercial flows, and
+                        developing reliable services tailored to the African business environment.
                     </p>
+
                     <p>
-                        J'opère à l'intersection du commerce international, de la logistique et de la structuration
-                        d'entreprises, avec une expertise développée entre le Moyen-Orient et l'Afrique.
+                        I operate at the intersection of international trade, logistics, and business
+                        development, drawing on expertise built across the Middle East and Africa.
                     </p>
                 </div>
 
                 <ul class="mt-8 divide-y divide-border border-y border-border">
+
                     <li class="py-5 grid grid-cols-12 gap-4 items-baseline group">
                         <span
                             class="col-span-12 md:col-span-7 text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
-                            Coordination d'importation & d'exportation
+                            Import & Export Coordination
                         </span>
-                        <span class="col-span-12 md:col-span-5 text-sm text-muted-foreground">Respect des délais et des
-                            règles.</span>
+                        <span class="col-span-12 md:col-span-5 text-sm text-muted-foreground">
+                            Ensuring compliance, reliability, and timely execution.
+                        </span>
                     </li>
+
                     <li class="py-5 grid grid-cols-12 gap-4 items-baseline group">
                         <span
                             class="col-span-12 md:col-span-7 text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
-                            Logistique maritime et terrestre
+                            Maritime & Land Logistics
                         </span>
-                        <span class="col-span-12 md:col-span-5 text-sm text-muted-foreground">Transport de marchandises
-                            par voie maritime et terrestre.</span>
+                        <span class="col-span-12 md:col-span-5 text-sm text-muted-foreground">
+                            Coordinating the movement of goods by sea and land.
+                        </span>
                     </li>
+
                     <li class="py-5 grid grid-cols-12 gap-4 items-baseline group">
                         <span
                             class="col-span-12 md:col-span-7 text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
-                            Gestion de partenaires internationaux
+                            International Partner Management
                         </span>
-                        <span class="col-span-12 md:col-span-5 text-sm text-muted-foreground">Coordination et suivi
-                            rigoureux.</span>
+                        <span class="col-span-12 md:col-span-5 text-sm text-muted-foreground">
+                            Building strong partnerships through structured coordination and close follow-up.
+                        </span>
                     </li>
+
                     <li class="py-5 grid grid-cols-12 gap-4 items-baseline group">
                         <span
                             class="col-span-12 md:col-span-7 text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
-                            Suivi administratif & opérationnel
+                            Administrative & Operational Management
                         </span>
-                        <span class="col-span-12 md:col-span-5 text-sm text-muted-foreground">Projets commerciaux
-                            pilotés de bout en bout.</span>
+                        <span class="col-span-12 md:col-span-5 text-sm text-muted-foreground">
+                            Managing commercial projects from planning through execution.
+                        </span>
                     </li>
+
                 </ul>
             </div>
         </div>
@@ -246,18 +300,23 @@
 
     <!-- EXPERTISE SECTION -->
     <section id="expertise" class="py-24 md:py-36 bg-secondary/60 border-y border-border">
-        <div class="container-editorial">
-            <div class="reveal max-w-3xl">
-                <span class="eyebrow">Mes secteurs d'activités</span>
-                <h2 class="mt-6 text-4xl md:text-6xl font-bold leading-[1.05] tracking-tight text-foreground">
-                    À l'intersection du commerce, de la <span class="text-primary">logistique</span> et de la gestion.
-                </h2>
-            </div>
+        <div class="container-editorial">   
 
-            <div class="mt-16 grid gap-6 md:grid-cols-2">
+            <div class="reveal max-w-3xl">
+                <span class="eyebrow">Areas of Expertise</span> 
+
+                <h2 class="mt-6 text-4xl md:text-6xl font-bold leading-[1.05] tracking-tight text-foreground">
+                    At the intersection of trade, <span class="text-primary">logistics</span> and business management.
+                </h2>
+            </div>  
+
+            <div class="mt-16 grid gap-6 md:grid-cols-2">   
+
+                <!-- 01 -->
                 <div class="reveal" style="animation-delay: 0ms;">
                     <article
-                        class="h-full bg-background border border-border rounded-2xl p-8 md:p-10 flex flex-col gap-5 shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-primary/40 transition-all">
+                        class="h-full bg-background border border-border rounded-2xl p-8 md:p-10 flex flex-col gap-5 shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-primary/40 transition-all">    
+
                         <div class="flex items-baseline justify-between">
                             <span class="text-2xl font-bold text-primary tracking-tight">01</span>
                             <svg class="h-5 w-5 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -266,18 +325,25 @@
                                 <path d="M7 7h10v10" />
                                 <path d="M7 17 17 7" />
                             </svg>
-                        </div>
-                        <h3 class="text-2xl md:text-[1.75rem] font-bold leading-tight tracking-tight text-foreground">
-                            Commerce international — Importation</h3>
-                        <p class="text-muted-foreground leading-relaxed">J'accompagne des opérations d'importation de
-                            véhicules, d'équipements et de marchandises, en apportant structure, clarté et sécurité à
-                            chaque étape du processus et en réduisant les risques et les délais.</p>
-                    </article>
-                </div>
+                        </div>  
 
+                        <h3 class="text-2xl md:text-[1.75rem] font-bold leading-tight tracking-tight text-foreground">
+                            International Trade — Import
+                        </h3>   
+
+                        <p class="text-muted-foreground leading-relaxed">
+                            I support import operations involving vehicles, equipment, and goods by bringing
+                            structure, clarity, and security to every stage of the process while reducing
+                            risks and delays.
+                        </p>
+                    </article>
+                </div>  
+
+                <!-- 02 -->
                 <div class="reveal" style="animation-delay: 80ms;">
                     <article
-                        class="h-full bg-background border border-border rounded-2xl p-8 md:p-10 flex flex-col gap-5 shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-primary/40 transition-all">
+                        class="h-full bg-background border border-border rounded-2xl p-8 md:p-10 flex flex-col gap-5 shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-primary/40 transition-all">    
+
                         <div class="flex items-baseline justify-between">
                             <span class="text-2xl font-bold text-primary tracking-tight">02</span>
                             <svg class="h-5 w-5 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -286,18 +352,25 @@
                                 <path d="M7 7h10v10" />
                                 <path d="M7 17 17 7" />
                             </svg>
-                        </div>
-                        <h3 class="text-2xl md:text-[1.75rem] font-bold leading-tight tracking-tight text-foreground">
-                            Logistique & coordination — Exportation</h3>
-                        <p class="text-muted-foreground leading-relaxed">Je structure et supervise des opérations
-                            d'exportation depuis le Moyen-Orient vers l'Afrique et d'autres marchés internationaux, avec
-                            un haut niveau de rigueur et de conformité.</p>
-                    </article>
-                </div>
+                        </div>  
 
+                        <h3 class="text-2xl md:text-[1.75rem] font-bold leading-tight tracking-tight text-foreground">
+                            Logistics & Coordination — Export
+                        </h3>   
+
+                        <p class="text-muted-foreground leading-relaxed">
+                            I structure and oversee export operations from the Middle East to Africa and
+                            other international markets, ensuring a high level of rigor, compliance, and
+                            operational efficiency.
+                        </p>
+                    </article>
+                </div>  
+
+                <!-- 03 -->
                 <div class="reveal" style="animation-delay: 160ms;">
                     <article
-                        class="h-full bg-background border border-border rounded-2xl p-8 md:p-10 flex flex-col gap-5 shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-primary/40 transition-all">
+                        class="h-full bg-background border border-border rounded-2xl p-8 md:p-10 flex flex-col gap-5 shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-primary/40 transition-all">    
+
                         <div class="flex items-baseline justify-between">
                             <span class="text-2xl font-bold text-primary tracking-tight">03</span>
                             <svg class="h-5 w-5 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -306,18 +379,26 @@
                                 <path d="M7 7h10v10" />
                                 <path d="M7 17 17 7" />
                             </svg>
-                        </div>
-                        <h3 class="text-2xl md:text-[1.75rem] font-bold leading-tight tracking-tight text-foreground">La
-                            logistique</h3>
-                        <p class="text-muted-foreground leading-relaxed">Coordination logistique globale : organisation
-                            du transport, suivi des expéditions, gestion des délais et communication entre les
-                            différents acteurs. Simplifier, éviter les pertes de temps et les erreurs coûteuses.</p>
-                    </article>
-                </div>
+                        </div>  
 
+                        <h3 class="text-2xl md:text-[1.75rem] font-bold leading-tight tracking-tight text-foreground">
+                            Logistics
+                        </h3>   
+
+                        <p class="text-muted-foreground leading-relaxed">
+                            End-to-end logistics coordination, including transportation planning,
+                            shipment tracking, deadline management, and communication between
+                            stakeholders. The goal: simplify operations, prevent delays, and minimize
+                            costly errors.
+                        </p>
+                    </article>
+                </div>  
+
+                <!-- 04 -->
                 <div class="reveal" style="animation-delay: 240ms;">
                     <article
-                        class="h-full bg-background border border-border rounded-2xl p-8 md:p-10 flex flex-col gap-5 shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-primary/40 transition-all">
+                        class="h-full bg-background border border-border rounded-2xl p-8 md:p-10 flex flex-col gap-5 shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-primary/40 transition-all">    
+
                         <div class="flex items-baseline justify-between">
                             <span class="text-2xl font-bold text-primary tracking-tight">04</span>
                             <svg class="h-5 w-5 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -326,131 +407,183 @@
                                 <path d="M7 7h10v10" />
                                 <path d="M7 17 17 7" />
                             </svg>
-                        </div>
-                        <h3 class="text-2xl md:text-[1.75rem] font-bold leading-tight tracking-tight text-foreground">La
-                            gestion d'entreprise</h3>
-                        <p class="text-muted-foreground leading-relaxed">J'accompagne entrepreneurs et structures dans
-                            la gestion et l'organisation de leurs activités : structuration des processus, coordination
-                            des équipes, optimisation des opérations et performance globale.</p>
-                    </article>
-                </div>
-            </div>
+                        </div>  
 
-            <div class="reveal mt-16 grid gap-8 md:grid-cols-12 items-start" style="animation-delay: 200ms;">
+                        <h3 class="text-2xl md:text-[1.75rem] font-bold leading-tight tracking-tight text-foreground">
+                            Business Management
+                        </h3>   
+
+                        <p class="text-muted-foreground leading-relaxed">
+                            I support entrepreneurs and organizations in managing and structuring their
+                            activities through process optimization, team coordination, operational
+                            efficiency, and overall performance improvement.
+                        </p>
+                    </article>
+                </div>  
+
+            </div>  
+
+            <!-- Other Activities -->
+            <div class="reveal mt-16 grid gap-8 md:grid-cols-12 items-start" style="animation-delay: 200ms;">   
+
                 <div class="md:col-span-4">
-                    <span class="eyebrow">Autres activités</span>
-                </div>
-                <ul class="md:col-span-8 grid sm:grid-cols-2 gap-4">
+                    <span class="eyebrow">Other Activities</span>
+                </div>  
+
+                <ul class="md:col-span-8 grid sm:grid-cols-2 gap-4">    
+
                     <li class="flex items-start gap-3 border-t border-border pt-4 text-foreground font-medium">
                         <span class="mt-2 h-1.5 w-1.5 rounded-full bg-primary shrink-0"></span>
-                        Conseil en commerce international
-                    </li>
+                        International Trade Consulting
+                    </li>   
+
                     <li class="flex items-start gap-3 border-t border-border pt-4 text-foreground font-medium">
                         <span class="mt-2 h-1.5 w-1.5 rounded-full bg-primary shrink-0"></span>
-                        Accompagnement stratégique des entrepreneurs
-                    </li>
+                        Strategic Support for Entrepreneurs
+                    </li>   
+
                     <li class="flex items-start gap-3 border-t border-border pt-4 text-foreground font-medium">
                         <span class="mt-2 h-1.5 w-1.5 rounded-full bg-primary shrink-0"></span>
-                        Mise en relation avec des partenaires fiables
-                    </li>
+                        Connecting Businesses with Trusted Partners
+                    </li>   
+
                     <li class="flex items-start gap-3 border-t border-border pt-4 text-foreground font-medium">
                         <span class="mt-2 h-1.5 w-1.5 rounded-full bg-primary shrink-0"></span>
-                        Suivi de projets commerciaux et logistiques
-                    </li>
+                        Commercial & Logistics Project Management
+                    </li>   
+
                 </ul>
-            </div>
+            </div>  
+
         </div>
     </section>
 
     <!-- IMAGERY BAND -->
     <section class="py-24 md:py-32 border-b border-border">
         <div class="container-editorial grid md:grid-cols-2 gap-6">
+
             <div class="reveal">
                 <figure class="relative overflow-hidden rounded-2xl shadow-md">
-                    <img src="{{ asset('img/dubai.jpg') }}" alt="Skyline de Dubaï au coucher du soleil" width="1600"
-                        height="900" loading="lazy" class="w-full h-full object-cover aspect-[4/3]" />
+                    <img src="{{ asset('img/dubai.jpg') }}"
+                        alt="Dubai skyline at sunset"
+                        width="1600"
+                        height="900"
+                        loading="lazy"
+                        class="w-full h-full object-cover aspect-[4/3]" />
+
                     <figcaption
                         class="absolute bottom-4 left-4 bg-background/95 backdrop-blur px-3 py-2 rounded-lg text-xs shadow">
                         <span class="eyebrow">Base</span>
-                        <div class="mt-0.5 text-base font-bold text-foreground">Dubaï — EAU (Émirats arabes unis)</div>
+                        <div class="mt-0.5 text-base font-bold text-foreground">
+                            Dubai — UAE (United Arab Emirates)
+                        </div>
                     </figcaption>
                 </figure>
             </div>
 
             <div class="reveal" style="animation-delay: 140ms;">
                 <figure class="relative overflow-hidden rounded-2xl shadow-md">
-                    <img src="{{ asset('img/logistics.jpg') }}" alt="Navire porte-conteneurs et logistique maritime"
-                        width="1600" height="1000" loading="lazy" class="w-full h-full object-cover aspect-[4/3]" />
+                    <img src="{{ asset('img/logistics.jpg') }}"
+                        alt="Container ship and maritime logistics"
+                        width="1600"
+                        height="1000"
+                        loading="lazy"
+                        class="w-full h-full object-cover aspect-[4/3]" />
+
                     <figcaption
                         class="absolute bottom-4 left-4 bg-background/95 backdrop-blur px-3 py-2 rounded-lg text-xs shadow">
-                        <span class="eyebrow">Terrain</span>
-                        <div class="mt-0.5 text-base font-bold text-foreground">Logistique maritime</div>
+                        <span class="eyebrow">Field</span>
+                        <div class="mt-0.5 text-base font-bold text-foreground">
+                            Maritime Logistics
+                        </div>
                     </figcaption>
                 </figure>
             </div>
+
         </div>
     </section>
 
     <!-- VISION & VALUES -->
     <section id="vision" class="py-24 md:py-36">
-        <div class="container-editorial grid gap-16 md:grid-cols-12">
-            <div class="reveal md:col-span-5">
-                <span class="eyebrow">Vision & valeurs</span>
-                <h2 class="mt-6 text-4xl md:text-5xl font-bold leading-[1.1] tracking-tight text-foreground">
-                    Construire des <span class="text-primary">ponts économiques</span> entre le Moyen-Orient et
-                    l'Afrique.
-                </h2>
-                <p class="mt-6 text-lg text-muted-foreground leading-relaxed">
-                    Contribuer au développement d'entreprises structurées, responsables et durables — et participer
-                    activement à la modernisation des pratiques économiques en Afrique centrale.
-                </p>
-            </div>
+        <div class="container-editorial grid gap-16 md:grid-cols-12">   
 
-            <div class="reveal md:col-span-6 md:col-start-7" style="animation-delay: 140ms;">
-                <div class="grid grid-cols-2 gap-4">
+            <div class="reveal md:col-span-5">
+                <span class="eyebrow">Vision & Values</span>    
+
+                <h2 class="mt-6 text-4xl md:text-5xl font-bold leading-[1.1] tracking-tight text-foreground">
+                    Building <span class="text-primary">economic bridges</span> between the Middle East and Africa.
+                </h2>   
+
+                <p class="mt-6 text-lg text-muted-foreground leading-relaxed">
+                    Contributing to the growth of structured, responsible, and sustainable businesses
+                    while actively helping modernize business practices across Central Africa.
+                </p>
+            </div>  
+
+            <div class="reveal md:col-span-6 md:col-start-7" style="animation-delay: 140ms;">   
+
+                <div class="grid grid-cols-2 gap-4">    
+
                     <div
                         class="bg-background border border-border rounded-2xl p-6 flex flex-col gap-3 min-h-[8rem] shadow-sm hover:shadow-md hover:border-primary/40 transition-all">
                         <span class="text-xs font-bold text-primary tracking-widest">01</span>
-                        <span
-                            class="text-xl font-bold leading-tight tracking-tight text-foreground">Responsabilité</span>
-                    </div>
+                        <span class="text-xl font-bold leading-tight tracking-tight text-foreground">
+                            Responsibility
+                        </span>
+                    </div>  
+
                     <div
                         class="bg-background border border-border rounded-2xl p-6 flex flex-col gap-3 min-h-[8rem] shadow-sm hover:shadow-md hover:border-primary/40 transition-all">
                         <span class="text-xs font-bold text-primary tracking-widest">02</span>
-                        <span class="text-xl font-bold leading-tight tracking-tight text-foreground">Rigueur</span>
-                    </div>
+                        <span class="text-xl font-bold leading-tight tracking-tight text-foreground">
+                            Rigor
+                        </span>
+                    </div>  
+
                     <div
                         class="bg-background border border-border rounded-2xl p-6 flex flex-col gap-3 min-h-[8rem] shadow-sm hover:shadow-md hover:border-primary/40 transition-all">
                         <span class="text-xs font-bold text-primary tracking-widest">03</span>
-                        <span class="text-xl font-bold leading-tight tracking-tight text-foreground">Loyauté</span>
-                    </div>
+                        <span class="text-xl font-bold leading-tight tracking-tight text-foreground">
+                            Integrity
+                        </span>
+                    </div>  
+
                     <div
                         class="bg-background border border-border rounded-2xl p-6 flex flex-col gap-3 min-h-[8rem] shadow-sm hover:shadow-md hover:border-primary/40 transition-all">
                         <span class="text-xs font-bold text-primary tracking-widest">04</span>
-                        <span class="text-xl font-bold leading-tight tracking-tight text-foreground">Respect des
-                            engagements</span>
-                    </div>
+                        <span class="text-xl font-bold leading-tight tracking-tight text-foreground">
+                            Commitment
+                        </span>
+                    </div>  
+
                     <div
                         class="bg-background border border-border rounded-2xl p-6 flex flex-col gap-3 min-h-[8rem] shadow-sm hover:shadow-md hover:border-primary/40 transition-all">
                         <span class="text-xs font-bold text-primary tracking-widest">05</span>
-                        <span class="text-xl font-bold leading-tight tracking-tight text-foreground">Foi en Dieu</span>
-                    </div>
+                        <span class="text-xl font-bold leading-tight tracking-tight text-foreground">
+                            Faith in God
+                        </span>
+                    </div>  
+
                     <div
                         class="bg-background border border-border rounded-2xl p-6 flex flex-col gap-3 min-h-[8rem] shadow-sm hover:shadow-md hover:border-primary/40 transition-all">
                         <span class="text-xs font-bold text-primary tracking-widest">06</span>
-                        <span class="text-xl font-bold leading-tight tracking-tight text-foreground">Transmission &
-                            création de valeur</span>
-                    </div>
-                </div>
+                        <span class="text-xl font-bold leading-tight tracking-tight text-foreground">
+                            Knowledge Sharing & Value Creation
+                        </span>
+                    </div>  
+
+                </div>  
 
                 <div class="mt-10 border-t border-border pt-8">
-                    <span class="eyebrow">Aujourd'hui</span>
+                    <span class="eyebrow">Today</span>  
+
                     <p class="mt-4 text-muted-foreground leading-relaxed">
-                        Basé à Dubaï, je poursuis le développement de mes activités dans la logistique, le commerce
-                        international et la gestion d'entreprises, avec l'ambition de participer activement à la
-                        modernisation des pratiques économiques en Afrique centrale.
+                        Based in Dubai, I continue to develop my activities across logistics, international
+                        trade, and business management, with the ambition of actively contributing to the
+                        modernization of business practices in Central Africa.
                     </p>
-                </div>
+                </div>  
+
             </div>
         </div>
     </section>
@@ -463,23 +596,23 @@
                     Contact
                 </span>
                 <h2 class="text-5xl md:text-7xl font-bold leading-[1] tracking-tight text-white">
-                    Transformons vos idées en résultats concrets.
+                    Turning ideas into concrete results.
                 </h2>
                 <p class="max-w-xl text-lg text-white/85 leading-relaxed">
-                    Vous avez un projet, une opportunité ou un besoin spécifique ? Je mets mes compétences, mon
-                    expérience et ma vision au service de solutions efficaces, adaptées à vos objectifs.
+                    Do you have a project, an opportunity, or a specific business need? I bring my expertise,
+                    experience, and vision to the development of effective solutions tailored to your objectives.
                 </p>
                 <p class="max-w-xl text-xl md:text-2xl font-semibold text-white/90 border-l-2 border-white/40 pl-5">
-                    « Échangeons autour de votre prochain projet. »
+                    “Let’s discuss your next project.”
                 </p>
-            </div>
+            </div>  
 
             <div class="reveal md:col-span-5 md:col-start-8" style="animation-delay: 160ms;">
                 <form id="contact-form"
                     class="space-y-5 bg-white/10 backdrop-blur border border-white/20 p-6 md:p-8 rounded-2xl">
                     <div>
                         <label
-                            class="block text-xs font-semibold mb-2 text-white/80 tracking-wide uppercase">Nom</label>
+                            class="block text-xs font-semibold mb-2 text-white/80 tracking-wide uppercase">Name</label>
                         <input required name="name" maxlength="100"
                             class="w-full bg-transparent border-b border-white/30 py-2 text-white outline-none focus:border-white transition-colors" />
                     </div>
@@ -497,7 +630,7 @@
                     </div>
                     <button type="submit"
                         class="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold bg-white text-primary hover:bg-white/90 transition-colors">
-                        Envoyer le message
+                        Send Message
                         <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -505,7 +638,7 @@
                             <path d="M7 17 17 7" />
                         </svg>
                     </button>
-                </form>
+                </form> 
 
                 <div class="mt-8 grid gap-3 text-sm text-white/85">
                     <div class="flex items-center gap-3">
@@ -515,7 +648,7 @@
                             <rect width="20" height="16" x="2" y="4" rx="2" />
                             <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                         </svg>
-                        contact@mikeshisha.com
+                        mikeshish61@gmail.com
                     </div>
                     <div class="flex items-center gap-3">
                         <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -524,7 +657,25 @@
                             <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
                             <circle cx="12" cy="10" r="3" />
                         </svg>
-                        Dubaï, Émirats arabes unis
+                        Dubai, United Arab Emirates
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2
+                                19.79 19.79 0 0 1-8.63-3.07
+                                19.5 19.5 0 0 1-6-6
+                                19.79 19.79 0 0 1-3.07-8.67
+                                A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72
+                                12.84 12.84 0 0 0 .7 2.81
+                                2 2 0 0 1-.45 2.11L8.09 9.91
+                                a16 16 0 0 0 6 6l1.27-1.27
+                                a2 2 0 0 1 2.11-.45
+                                12.84 12.84 0 0 0 2.81.7
+                                A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                        +971 52 875 7235 | +243 847 729 073
                     </div>
                 </div>
             </div>
@@ -538,11 +689,11 @@
             <div class="text-base font-bold tracking-tight text-white">
                 Mike Kabwadi Shisha
             </div>
-            <div>© <span id="current-year"></span> — Tous droits réservés.</div>
+            <div>© <span id="current-year"></span> — All rights reserved..</div>
             <div class="flex gap-6 font-medium">
-                <a href="#" class="hover:text-white transition-colors">Facebook</a>
-                <a href="#" class="hover:text-white transition-colors">X</a>
-                <a href="#" class="hover:text-white transition-colors">Instagram</a>
+                <a href="https://www.linkedin.com/in/mike-shisha-272a1b397/" class="hover:text-white transition-colors">LinkedIn</a>
+                <a href="https://www.facebook.com/share/1EED3CdZdT/?mibextid=wwXIfr" class="hover:text-white transition-colors">Facebook</a>
+                <a href="https://www.instagram.com/mikeshisha?igsh=MW10dGFoZWc5c2VtcA%3D%3D&utm_source=qr" class="hover:text-white transition-colors">Instagram</a>
             </div>
         </div>
     </footer>
@@ -594,7 +745,7 @@
                 const formData = new FormData(contactForm);
                 const name = encodeURIComponent(formData.get('name') || '');
                 const message = encodeURIComponent(formData.get('message') || '');
-                window.location.href = `mailto:contact@mikeshisha.com?subject=Contact — ${name}&body=${message}`;
+                window.location.href = `mailto:mikeshish61@gmail.com?subject=Contact — ${name}&body=${message}`;
             });
         });
     </script>
