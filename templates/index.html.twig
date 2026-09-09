@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Mike Kabwadi Shisha — Entrepreneur, International Trade & Business Management</title>
+    <link rel="icon" type="image/jpeg" href="{{ asset('img/favicon.jpg') }}">
 
     <meta name="description"
         content="Mike Kabwadi Shisha is a Congolese entrepreneur based in Dubai, specializing in international trade, business management, and strategic business development between the United Arab Emirates and Africa.">
@@ -23,9 +24,9 @@
         content="Building strong business connections between the Middle East and Africa through international trade, entrepreneurship, and strategic business development.">
 
     <meta property="og:type" content="website">
-    <meta property="og:url" content="/">
+    <meta property="og:url" content="https://mikeshisha.com/">
 
-    <link rel="canonical" href="/">
+    <link rel="canonical" href="https://mikeshisha.com/">
 
     {% block stylesheets %}
     <link rel="stylesheet" href="{{ asset('styles/app.css') }}">
@@ -41,6 +42,22 @@
         } else {
             document.documentElement.classList.remove('dark');
         }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mike Kabwadi Shisha",
+        "url": "https://mikeshisha.com/",
+        "jobTitle": "Entrepreneur",
+        "description": "Congolese entrepreneur based in Dubai specializing in international trade, business management, logistics, and strategic business development between the UAE and Africa.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Dubai",
+            "addressCountry": "AE"
+        },
+        "email": "contact@mikeshisha.com"
+    }
     </script>
 </head>
 
