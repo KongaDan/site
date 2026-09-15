@@ -15,4 +15,13 @@ final class IndexController extends AbstractController
             'controller_name' => 'IndexController',
         ]);
     }
+
+    #[Route('/{dynamique}', name: 'app_dynamique')]
+    public function dynamique(string $dynamique): Response
+    {
+        return $this->render('index.html.twig', [
+            'controller_name' => 'IndexController',
+        ]);
+    }
+
 }
